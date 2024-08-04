@@ -28,7 +28,6 @@
 	}
 
 body {
-	overflow-x: hidden;
 	margin: 0;
 }
 
@@ -44,6 +43,10 @@ button {
 h1 {
 	font-family: 'TT Lakes Bold';
 	margin-left: 12px;
+}
+.page {
+	min-height: 100%;
+	overflow: hidden;
 }
 .svg__header {
 	padding-top: 28px;
@@ -112,8 +115,7 @@ h1 {
 .services__tab {
 	color: rgba(0, 0, 0, 0.4);
 	background: #f8f8f8;
-	font-size: 15px;
-	margin: 10px;
+	margin: 5px;
 	white-space: nowrap;
 	display: flex;
 	align-items: center;
@@ -122,10 +124,12 @@ h1 {
 }
 
 .services__tabs {
-	margin: 15px;
-	height: 40px;
+	overflow-x: auto;
+	margin: 6px;
+	height: 50px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .services__link {
@@ -237,6 +241,7 @@ h1 {
 		font-size: 16px;
 	}
 	.full__img {
+		background-color: #999999;
 		width: 600px;
 		height: 307px;
 	}
