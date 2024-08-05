@@ -29,10 +29,9 @@
 
 html,
 body {
-	overflow: hidden;
-	width: 100%;
-	height: 100%;
 	margin: 0;
+	height: 100%;
+	overflow-x: hidden;
 }
 
 header {
@@ -41,6 +40,7 @@ header {
 	height: 88px;
 	background-color: white;
 }
+
 button {
 	cursor: pointer;
 	background: #f8f8f8;
@@ -58,12 +58,20 @@ h1 {
 	font-family: 'TT Lakes Bold';
 	margin-left: 12px;
 }
-/* .wrapper {
 
-} */
+main {
+	flex: 1;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
 .svg__header {
 	padding-top: 28px;
-	margin-left: 35px;
+	margin-left: 16px;
 }
 
 .main__header-menu {
@@ -104,7 +112,6 @@ h1 {
 
 .main_content {
 	background-color: #f8f8f8;
-	height: 835px;
 	padding-top: 15px;
 }
 
@@ -126,7 +133,7 @@ h1 {
 
 .services__tab {
 	background: #f8f8f8;
-	margin: 5px;
+	margin: 10px;
 	white-space: nowrap;
 	display: flex;
 	align-items: center;
@@ -135,7 +142,7 @@ h1 {
 }
 
 .services__tabs {
-	overflow-x: auto;
+	overflow-y: hidden;
 	margin: 6px;
 	height: 50px;
 	display: flex;
@@ -151,7 +158,7 @@ h1 {
 	align-items: center;
 }
 
-.services__link:hover{
+.services__link:hover {
 	opacity: 0.5;
 }
 
@@ -182,7 +189,7 @@ h1 {
 .services__image {
 	width: 100%;
 	margin-top: 9px;
-	margin-right: 40px;
+	padding-right: 22px;
 }
 
 .main__services {
@@ -259,8 +266,7 @@ h1 {
 		line-height: 18px;
 		font-size: 16px;
 	}
-	.services__image{
-		margin-right: 16px;
+	.services__image {
 		width: 531px;
 		height: 307px;
 	}
@@ -268,7 +274,7 @@ h1 {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		box-sizing: border-box;
+		/* box-sizing: border-box; */
 	}
 	.header__btn {
 		background-color: #f8f8f8;
